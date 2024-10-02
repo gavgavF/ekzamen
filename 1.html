@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка имени</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Заполните форму</h1>
+        <form id="nameForm">
+
+            <label class="nnaammee" for="name">Имя:</label>
+            <input type="text" id="name" name="name">
+            <div class="error" id="nameError"></div>
+
+            <label for="localdate">Дата Рождения</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="text" id="phone" name="phone">
+            <div class="error" id="phoneError"></div>
+
+            <label for="data">Дата и время: </label>
+            <input type="datetime-local" id="localdate" name="date"/>
+            <input type="submit">
+
+            <script>
+                
+                const today = new Date().toISOString().split('T')[0];
+                
+                
+                const dateInput = document.getElementById('date');
+                dateInput.min = '01.01.1900'; 
+                dateInput.max = today; 
+            </script>
+    
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="3.js"></script>
+</body>
+</html>

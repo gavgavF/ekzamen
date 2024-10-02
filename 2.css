@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(50, 117, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: -25;
+}
+
+
+.container {
+    background: rgb(192, 185, 185);
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 15 30 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(32, 32, 32);
+
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(50, 117, 146);
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #318092;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.message {
+    margin-top: 40px;
+    color: rgb(74, 141, 188);
+}
+
+
+
+.nnaammee {
+    color: rgb(0, 0, 0);
+}
+
+.vulf {
+    color: rgb(0, 0, 0);
+    background-color: rgb(32, 175, 103);
+    display: flex;
+    justify-content: left;
+    height: 5vh;
+    width: 38vh;
+    margin: -7px;
+}
